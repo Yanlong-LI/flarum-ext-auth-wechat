@@ -1,5 +1,5 @@
 {
-    "name": "yudianguo-stanleysong/flarum-ext-auth-wechat",
+    "name": "flarum/flarum-ext-auth-wechat",
     "description": "Allow users to log in with Wechat.",
     "type": "flarum-extension",
     "keywords": ["authentication"],
