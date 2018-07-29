@@ -11,8 +11,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/StanleySong/flarum-ext-auth-wechat/issues",
-        "source": "https://github.com/StanleySong/flarum-ext-auth-wechat"
+        "issues": "https://github.com/yudianguo/flarum-ext-auth-wechat/issues",
+        "source": "https://github.com/yudianguo/flarum-ext-auth-wechat"
     },
     "require": {
         "flarum/core": "^0.1.0",
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "StanleySong\\Auth\\Wechat\\": "src/"
+            "yudianguo\\Auth\\Wechat\\": "src/"
         }
     },
     "extra": {

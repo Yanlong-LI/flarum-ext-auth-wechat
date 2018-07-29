@@ -4,7 +4,7 @@
  * Stanley Song <sxhuan@gmail.com>
  */
 
-namespace StanleySong\Auth\Wechat\Listener;
+namespace yudianguo\Auth\Wechat\Listener;
 
 use DirectoryIterator;
 use Flarum\Event\ConfigureClientView;
@@ -32,14 +32,14 @@ class AddClientAssets
                 __DIR__.'/../../js/forum/dist/extension.js',
                 __DIR__.'/../../less/forum/extension.less'
             ]);
-            $event->addBootstrapper('stanleysong/auth/wechat/main');
+            $event->addBootstrapper('yudianguo/auth/wechat/main');
         }
 
         if ($event->isAdmin()) {
             $event->addAssets([
                 __DIR__.'/../../js/admin/dist/extension.js'
             ]);
-            $event->addBootstrapper('stanleysong/auth/wechat/main');
+            $event->addBootstrapper('yudianguo/auth/wechat/main');
         }
     }
 

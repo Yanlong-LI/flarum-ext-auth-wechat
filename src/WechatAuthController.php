@@ -3,7 +3,7 @@
  * Stanley Song <sxhuan@gmail.com>
  */
 
-namespace StanleySong\Auth\Wechat;
+namespace yudianguo\Auth\Wechat;
 
 use Flarum\Forum\AuthenticationResponseFactory;
 use Flarum\Forum\Controller\AbstractOAuth2Controller;
@@ -38,7 +38,7 @@ class WechatAuthController extends AbstractOAuth2Controller
      */
     public function handle(Request $request)
     {
-        $callback_url = $this->settings->get('stanleysong-auth-wechat.callback_url');
+        $callback_url = $this->settings->get('yudianguo-auth-wechat.callback_url');
         $this->provider = $this->getProvider($callback_url);
         $session = $request->getAttribute('session');
         $code = $_GET['code'];
@@ -85,8 +85,8 @@ class WechatAuthController extends AbstractOAuth2Controller
      */
     protected function getProvider($redirectUri)
     {
-        $appid = $this->settings->get('stanleysong-auth-wechat.app_id');
-        $appkey = $this->settings->get('stanleysong-auth-wechat.app_secret');
+        $appid = $this->settings->get('yudianguo-auth-wechat.app_id');
+        $appkey = $this->settings->get('yudianguo-auth-wechat.app_secret');
         return new OAuth($appid, $appkey);
     }
 
