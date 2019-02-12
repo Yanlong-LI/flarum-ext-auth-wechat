@@ -4,7 +4,7 @@
  * Stanley Song <sxhuan@gmail.com>
  */
 
-namespace yudianguo\Auth\Wechat\Listener;
+namespace Flarum\Auth\Wechat\Listener;
 
 use Flarum\Event\ConfigureForumRoutes;
 use Illuminate\Contracts\Events\Dispatcher;
@@ -24,6 +24,6 @@ class AddWechatAuthRoute
      */
     public function configureForumRoutes(ConfigureForumRoutes $event)
     {
-        $event->get('/auth/wechat', 'auth.wechat', 'yudianguo\Auth\Wechat\WechatAuthController');
+        $event->get('/auth/wechat', 'auth.wechat', 'Flarum\Auth\Wechat\WechatAuthController');
     }
 }

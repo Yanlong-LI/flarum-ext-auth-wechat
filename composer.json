@@ -21,16 +21,16 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/yudianguo/flarum-ext-auth-wechat/issues",
-    "source": "https://github.com/yudianguo/flarum-ext-auth-wechat"
+    "issues": "https://github.com/Yanlong-LI/flarum-ext-auth-wechat/issues",
+    "source": "https://github.com/Yanlong-LI/flarum-ext-auth-wechat"
   },
   "require": {
     "flarum/core": "^0.1.0",
-    "henter/wechat-oauth": "dev-master"
+    "henter/wechat-oauth": "^1.0.1"
   },
   "autoload": {
     "psr-4": {
-      "yudianguo\\Auth\\Wechat\\": "src/"
+      "Flarum\\Auth\\Wechat\\": "src/"
     }
   },
   "extra": {

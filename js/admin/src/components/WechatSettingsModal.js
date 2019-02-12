@@ -6,24 +6,24 @@ export default class WechatSettingsModal extends SettingsModal {
   }
 
   title() {
-    return app.translator.trans('yudianguo-auth-wechat.admin.wechat_settings.title');
+    return app.translator.trans('Flarum-auth-wechat.admin.wechat_settings.title');
   }
 
   form() {
     return [
       <div className="Form-group">
-        <label>{app.translator.trans('yudianguo-auth-wechat.admin.wechat_settings.app_id_label')}</label>
-        <input className="FormControl" bidi={this.setting('yudianguo-auth-wechat.app_id')}/>
+        <label>{app.translator.trans('Flarum-auth-wechat.admin.wechat_settings.app_id_label')}</label>
+        <input className="FormControl" bidi={this.setting('Flarum-auth-wechat.app_id')}/>
       </div>,
 
       <div className="Form-group">
-        <label>{app.translator.trans('yudianguo-auth-wechat.admin.wechat_settings.app_secret_label')}</label>
-        <input className="FormControl" bidi={this.setting('yudianguo-auth-wechat.app_secret')}/>
+        <label>{app.translator.trans('Flarum-auth-wechat.admin.wechat_settings.app_secret_label')}</label>
+        <input className="FormControl" bidi={this.setting('Flarum-auth-wechat.app_secret')}/>
       </div>,
 
       <div className="Form-group">
-        <label>{app.translator.trans('yudianguo-auth-wechat.admin.wechat_settings.app_cburl_label')}</label>
-        <input className="FormControl" bidi={this.setting('yudianguo-auth-wechat.callback_url')}/>
+        <label>{app.translator.trans('Flarum-auth-wechat.admin.wechat_settings.app_cburl_label')}</label>
+        <input className="FormControl" bidi={this.setting('Flarum-auth-wechat.callback_url')}/>
       </div>
     ];
   }

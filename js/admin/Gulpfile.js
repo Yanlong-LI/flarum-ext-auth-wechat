@@ -2,6 +2,6 @@ var gulp = require('flarum-gulp');
 
 gulp({
   modules: {
-    'yudianguo/auth/wechat': 'src/**/*.js'
+    'Flarum/auth/wechat': 'src/**/*.js'
   }
 });

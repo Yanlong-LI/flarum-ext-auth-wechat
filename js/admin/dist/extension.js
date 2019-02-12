@@ -1,6 +1,6 @@
 'use strict';
 
-System.register('yudianguo/auth/wechat/components/WechatSettingsModal', ['flarum/components/SettingsModal'], function (_export, _context) {
+System.register('Flarum/auth/wechat/components/WechatSettingsModal', ['flarum/components/SettingsModal'], function (_export, _context) {
   "use strict";
 
   var SettingsModal, WechatSettingsModal;
@@ -25,7 +25,7 @@ System.register('yudianguo/auth/wechat/components/WechatSettingsModal', ['flarum
         }, {
           key: 'title',
           value: function title() {
-            return app.translator.trans('yudianguo-auth-wechat.admin.wechat_settings.title');
+            return app.translator.trans('Flarum-auth-wechat.admin.wechat_settings.title');
           }
         }, {
           key: 'form',
@@ -36,27 +36,27 @@ System.register('yudianguo/auth/wechat/components/WechatSettingsModal', ['flarum
               m(
                 'label',
                 null,
-                app.translator.trans('yudianguo-auth-wechat.admin.wechat_settings.app_id_label')
+                app.translator.trans('Flarum-auth-wechat.admin.wechat_settings.app_id_label')
               ),
-              m('input', { className: 'FormControl', bidi: this.setting('yudianguo-auth-wechat.app_id') })
+              m('input', { className: 'FormControl', bidi: this.setting('Flarum-auth-wechat.app_id') })
             ), m(
               'div',
               { className: 'Form-group' },
               m(
                 'label',
                 null,
-                app.translator.trans('yudianguo-auth-wechat.admin.wechat_settings.app_secret_label')
+                app.translator.trans('Flarum-auth-wechat.admin.wechat_settings.app_secret_label')
               ),
-              m('input', { className: 'FormControl', bidi: this.setting('yudianguo-auth-wechat.app_secret') })
+              m('input', { className: 'FormControl', bidi: this.setting('Flarum-auth-wechat.app_secret') })
             ), m(
               'div',
               { className: 'Form-group' },
               m(
                 'label',
                 null,
-                app.translator.trans('yudianguo-auth-wechat.admin.wechat_settings.app_cburl_label')
+                app.translator.trans('Flarum-auth-wechat.admin.wechat_settings.app_cburl_label')
               ),
-              m('input', { className: 'FormControl', bidi: this.setting('yudianguo-auth-wechat.callback_url') })
+              m('input', { className: 'FormControl', bidi: this.setting('Flarum-auth-wechat.callback_url') })
             )];
           }
         }]);
@@ -69,20 +69,20 @@ System.register('yudianguo/auth/wechat/components/WechatSettingsModal', ['flarum
 });;
 'use strict';
 
-System.register('yudianguo/auth/wechat/main', ['flarum/app', 'yudianguo/auth/wechat/components/WechatSettingsModal'], function (_export, _context) {
+System.register('Flarum/auth/wechat/main', ['flarum/app', 'Flarum/auth/wechat/components/WechatSettingsModal'], function (_export, _context) {
   "use strict";
 
   var app, WechatSettingsModal;
   return {
     setters: [function (_flarumApp) {
       app = _flarumApp.default;
-    }, function (_yudianguoAuthWechatComponentsWechatSettingsModal) {
-      WechatSettingsModal = _yudianguoAuthWechatComponentsWechatSettingsModal.default;
+    }, function (_FlarumAuthWechatComponentsWechatSettingsModal) {
+      WechatSettingsModal = _FlarumAuthWechatComponentsWechatSettingsModal.default;
     }],
     execute: function () {
 
-      app.initializers.add('yudianguo-auth-wechat', function () {
-        app.extensionSettings['yudianguo-auth-wechat'] = function () {
+      app.initializers.add('Flarum-auth-wechat', function () {
+        app.extensionSettings['Flarum-auth-wechat'] = function () {
           return app.modal.show(new WechatSettingsModal());
         };
       });

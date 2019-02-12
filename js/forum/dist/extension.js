@@ -1,6 +1,6 @@
 'use strict';
 
-System.register('yudianguo/auth/wechat/main', ['flarum/extend', 'flarum/app', 'flarum/components/LogInButtons', 'flarum/components/LogInButton'], function (_export, _context) {
+System.register('Flarum/auth/wechat/main', ['flarum/extend', 'flarum/app', 'flarum/components/LogInButtons', 'flarum/components/LogInButton'], function (_export, _context) {
   "use strict";
 
   var extend, app, LogInButtons, LogInButton;
@@ -16,7 +16,7 @@ System.register('yudianguo/auth/wechat/main', ['flarum/extend', 'flarum/app', 'f
     }],
     execute: function () {
 
-      app.initializers.add('yudianguo-auth-wechat', function () {
+      app.initializers.add('Flarum-auth-wechat', function () {
         extend(LogInButtons.prototype, 'items', function (items) {
           items.add('wechat', m(
             LogInButton,
@@ -24,7 +24,7 @@ System.register('yudianguo/auth/wechat/main', ['flarum/extend', 'flarum/app', 'f
               className: 'Button LogInButton--wechat',
               icon: 'wechat',
               path: '/auth/wechat' },
-            app.translator.trans('yudianguo-auth-wechat.forum.log_in.with_wechat_button')
+            app.translator.trans('Flarum-auth-wechat.forum.log_in.with_wechat_button')
           ));
         });
       });

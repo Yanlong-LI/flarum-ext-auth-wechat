@@ -1,7 +1,7 @@
 import app from 'flarum/app';
 
-import WechatSettingsModal from 'yudianguo/auth/wechat/components/WechatSettingsModal';
+import WechatSettingsModal from 'Flarum/auth/wechat/components/WechatSettingsModal';
 
-app.initializers.add('yudianguo-auth-wechat', () => {
-  app.extensionSettings['yudianguo-auth-wechat'] = () => app.modal.show(new WechatSettingsModal());
+app.initializers.add('Flarum-auth-wechat', () => {
+  app.extensionSettings['Flarum-auth-wechat'] = () => app.modal.show(new WechatSettingsModal());
 });

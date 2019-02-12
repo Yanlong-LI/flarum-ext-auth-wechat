@@ -10,7 +10,7 @@ This plugin is for Flarum using Wechat third-party login.
 
 # Setup
 1. install extension:
->composer require yudianguo/flarum-ext-auth-wechat
+>composer require Flarum/flarum-ext-auth-wechat
 
 update extension:
 >composer update
