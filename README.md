@@ -35,7 +35,8 @@ you can go to profile to change it or email.
 
 # License
 The MIT License (MIT)
-
+Copyright (c) 2019 Yanlong Li
+Copyright (c) 2018 yudianguo
 Copyright (c) 2017 Stanley Song
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
