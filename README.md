@@ -1,6 +1,9 @@
 # flarum-ext-auth-wechat
 This plugin is for Flarum using Wechat third-party login.
 
+
+写在前面：当前版本不支持B8
+
 ![image http://forum.sixbays.com/assets/images/2-NZcok3IOlGxzRCxM.png](http://forum.sixbays.com/assets/images/2-NZcok3IOlGxzRCxM.png)
 
 ![image http://forum.sixbays.com/assets/images/2-LdkX1knD3CjnM833.png](http://forum.sixbays.com/assets/images/2-LdkX1knD3CjnM833.png)
